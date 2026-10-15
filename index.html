@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Minstrel</title>
+  <meta name="description" content="The Minstrel is a weekly sword-and-sorcery comedy strip inspired by classic 1980s newspaper comics.">
+  <style>
+    :root {
+      --ink: #111;
+      --paper: #fff;
+      --rule: #111;
+      --accent: #b61f24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.55;
+    }
+    .page {
+      width: min(1080px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 54px 0 34px;
+      text-align: center;
+      border-bottom: 3px solid var(--rule);
+    }
+    .masthead {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(3.4rem, 11vw, 7.5rem);
+      line-height: .9;
+      letter-spacing: -.055em;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .tagline {
+      margin: 18px auto 0;
+      max-width: 760px;
+      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+    }
+    main section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .intro p {
+      margin: 0 0 26px;
+      font-size: 1.22rem;
+    }
+    .cta {
+      display: inline-block;
+      padding: 13px 20px;
+      border: 2px solid var(--ink);
+      background: var(--ink);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .94rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .cta:hover,
+    .cta:focus {
+      background: #fff;
+      color: var(--ink);
+    }
+    h2 {
+      margin: 0 0 28px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .party {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+    .character {
+      text-align: center;
+    }
+    .character h3 {
+      margin: 0 0 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      text-transform: uppercase;
+    }
+    .character p {
+      margin: 0;
+      font-size: .98rem;
+    }
+    .sample {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .sample p {
+      margin: 0 0 24px;
+      font-size: 1.08rem;
+    }
+    .signup {
+      text-align: center;
+    }
+    .signup strong {
+      display: block;
+      margin-bottom: 22px;
+      font-size: clamp(1.3rem, 3vw, 1.85rem);
+    }
+    footer {
+      padding: 28px 0 44px;
+      text-align: center;
+      font-size: .88rem;
+    }
+    @media (max-width: 760px) {
+      header { padding-top: 38px; }
+      .party { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .party { grid-template-columns: 1fr; }
+      main section { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1 class="masthead">The Minstrel</h1>
+      <p class="tagline">A weekly sword-and-sorcery comedy strip in the spirit of classic 1980s newspaper comics.</p>
+    </header>
+
+    <main>
+      <section>
+        <div class="intro">
+          <p>Meet a working minstrel, an enthusiastic warrior, a practical barkeep, and a provisioner who has seen adventurers come and go. New trouble arrives one gig at a time.</p>
+          <a class="cta" href="https://minstrelgigs.substack.com/subscribe">Subscribe</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Meet the Party</h2>
+        <div class="party">
+          <article class="character">
+            <h3>TM</h3>
+            <p>A working minstrel with a dry wit, a lute, and an increasingly complicated life.</p>
+          </article>
+          <article class="character">
+            <h3>Roxy</h3>
+            <p>Brave, loud, decisive, and usually moving before everyone else has finished thinking.</p>
+          </article>
+          <article class="character">
+            <h3>Bessa</h3>
+            <p>The practical, warm-hearted barkeep who can puncture a grand idea with one look.</p>
+          </article>
+          <article class="character">
+            <h3>Hobb</h3>
+            <p>A cheerful, experienced provisioner who is always ready with one more useful item.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="sample">
+          <h2>One Gig at a Time</h2>
+          <p>The Minstrel mixes everyday working-life frustrations with swords, taverns, tombs, bad ideas, good friends, and the occasional ten-foot pole.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="signup">
+          <strong>A new Minstrel gig, delivered every Saturday morning.</strong>
+          <a class="cta" href="https://minstrelgigs.substack.com/subscribe">Get The Minstrel</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      The Minstrel &copy; Stephen Prescott Smith
+    </footer>
+  </div>
+</body>
+</html>
